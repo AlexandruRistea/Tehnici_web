@@ -254,6 +254,93 @@ In footer exista:
 #### 20. Validare HTML
 Pagina a fost verificata cu validatorul HTML si se valideaza corect.
 
+## Etapa 2
+
+### Cerinte generale implementate
+- proiectul este lucrat pe branch-ul `Etapa_2`
+- prima pagina a fost refacuta cu layout responsive pe baza de grid
+- a fost folosita schema cromatica individuala: `#38378C`, `#498C37`, `#8C5537`, `#282837`, `#E9FFE3`
+- stilizarea foloseste variabile CSS, spatiere laterala coerenta, `gap`, `padding` uniform si delimitare vizuala clara a zonelor
+- au fost adaugate un font extern prin Google Fonts si iconuri Font Awesome
+
+### Cerinte individuale implementate
+
+#### 1. Schema cromatica
+Paleta aleasa este:
+- `#38378C`
+- `#498C37`
+- `#8C5537`
+- `#282837`
+- `#E9FFE3`
+
+Culorile sunt folosite prin variabile CSS pentru fundaluri, texte, accente, umbre si stari de hover.
+
+#### 2. Layout responsive
+Prima pagina foloseste un grid cu 8 zone, conform cerintei individuale:
+- zona 1: prezentare / poster introductiv
+- zona 2: tabel
+- zona 3: calendar de evenimente
+- zona 4: anunturi
+- zona 5: utilizatori online
+- zona 6: date despre utilizator si statistici
+- zona 7: date despre site si server
+- zona 8: continut suplimentar
+
+Layout-ul se schimba intre:
+- ecran mare: 3 coloane
+- ecran mediu: 2 coloane
+- ecran mic: 1 coloana
+
+#### 3. Design rudimentar
+Au fost implementate:
+- spatiere laterala cu variabile CSS
+- `gap` intre zonele gridului
+- `padding` uniform in zonele de continut
+- fundaluri diferite pe zone
+- border
+- colturi rotunjite
+- umbre
+- dimensiuni responsive pentru imagini, iframe-uri si PDF
+
+#### 4. Font extern si iconuri
+Am folosit:
+- Google Fonts pentru fonturile principale
+- Font Awesome pentru un icon static si unul animat
+
+#### 5. Stilizare tabel
+Tabelul este stilizat cu:
+- `caption` jos
+- alternanta vizuala pe coloane
+- hover pe rand
+- border collapse
+- container cu scroll orizontal pe ecrane mai mici
+- `rowspan` si `colspan`
+
+#### 6. Stilizare taburi
+Zona de videoclipuri este refacuta ca sistem de taburi cu:
+- container separat pentru linkuri si iframe
+- butoane stilizate pentru linkuri
+- flexbox
+- iframe integrat
+
+#### 7. Link top
+A fost adaugat un buton fix de revenire sus, cu:
+- forma rotunjita in partea de sus
+- tooltip
+- opacitate redusa in starea initiala
+- schimbare de culoare si scalare a sagetii la hover
+
+#### 8. Bonusuri implementate in etapa 2
+- reset CSS in fisier separat
+- stilizare MathML
+
+### Fisiere relevante pentru etapa 2
+- `index.html`
+- `resurse/css/reset.css`
+- `resurse/css/stil.css`
+- `Cerinte_Rezolvate.md`
+- `Intrebari.md`
+
 ## Bonusuri
 In varianta actuala sunt implementate toate bonusurile cerute:
 - formula MathML cu sens in contextul alegerii sursei pentru un PC
