@@ -1,5 +1,7 @@
 # Tehnici Web - Proiect
 
+# Link Github: https://github.com/AlexandruRistea/Tehnici_web/tree/main
+
 ## Tema proiectului
 Tema aleasa este **Nexus Components**, un magazin online de piese de calculator axat exclusiv pe vanzarea de componente PC: procesoare, placi video, placi de baza, memorii RAM, SSD-uri, surse, carcase si accesorii pentru upgrade. Site-ul nu include servicii de reparatii. Accentul este pus pe organizarea clara a informatiei, pe compatibilitate si pe ghidarea rapida a utilizatorului catre produsele potrivite.
 
