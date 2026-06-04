@@ -1,0 +1,157 @@
+@page :left {
+  margin-left: 3cm;
+  margin-right: 1cm;
+}
+
+@page :right {
+  margin-left: 1cm;
+  margin-right: 3cm;
+}
+
+@media print {
+  html,
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  .watermark-print {
+    position: fixed;
+    right: 0.6cm;
+    bottom: 0.6cm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 4cm;
+    height: 1cm;
+    border: 3px solid #000;
+    border-radius: 0.2cm;
+    opacity: 0.4;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    z-index: 999;
+    background: #fff;
+  }
+
+  .site-header,
+  .site-footer,
+  .zone,
+  #extra > section,
+  .content-card,
+  .page-hero {
+    box-shadow: none !important;
+    border: 0 !important;
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  .site-header,
+  .site-footer {
+    margin: 0;
+    padding: 0;
+  }
+
+  .site-header a,
+  .site-footer a {
+    color: #000 !important;
+  }
+
+  .site-header h1 {
+    color: #000 !important;
+    text-align: center;
+  }
+
+  .brand-copy,
+  .eyebrow,
+  .menu-toggle,
+  #link-top,
+  .site-footer > p,
+  img,
+  video,
+  iframe,
+  object,
+  figure,
+  figcaption,
+  .hero-card,
+  .mini-download,
+  .container-iframe,
+  #playlist-bonus,
+  #pdf-bonus,
+  .tooltip,
+  .icon-animated,
+  .icon-static {
+    display: none !important;
+  }
+
+  .site-header {
+    page-break-after: always;
+  }
+
+  .site-nav {
+    display: block !important;
+    clip-path: none !important;
+    opacity: 1 !important;
+    margin-top: 0.2cm;
+  }
+
+  .menu-root {
+    display: block;
+    list-style: disc inside !important;
+  }
+
+  .menu-item {
+    margin-bottom: 0.15cm;
+  }
+
+  .menu-item > a {
+    display: block;
+    padding: 0;
+    min-height: 0;
+    background: none !important;
+    border: 0 !important;
+    color: #000 !important;
+    transform: none !important;
+  }
+
+  .menu-item > a::after,
+  .menu-item i {
+    display: none !important;
+  }
+
+  .submenu {
+    display: none !important;
+  }
+
+  .project-banner {
+    display: block !important;
+    color: #000 !important;
+    margin: 0 auto;
+    margin-top: 0.5cm;
+  }
+
+  main,
+  .page-shell,
+  #extra {
+    display: block !important;
+    padding: 0;
+  }
+
+  .zone,
+  .content-card,
+  .page-hero,
+  #extra > section {
+    padding: 0 0 0.3cm;
+    margin-bottom: 0.35cm;
+  }
+
+  a {
+    text-decoration: none !important;
+  }
+
+  .site-footer {
+    page-break-before: always;
+    padding-top: 0.2cm;
+  }
+}

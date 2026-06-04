@@ -362,3 +362,145 @@ Poti explica simplu asa:
 - am adaptat designul pentru desktop, mediu si mobil
 - am implementat cerintele individuale pentru tabel, taburi si link-top
 - am folosit variabile CSS pentru consistenta
+
+## 74. Ce este nou in etapa 3?
+Etapa 3 adauga doua lucruri mari:
+- meniul responsive al site-ului
+- stilul special pentru printare
+
+## 75. De ce am avut nevoie de pagini noi?
+Pentru ca cerinta pentru meniu spune ca trebuie sa existe o optiune care grupeaza alte pagini ale site-ului.
+
+De aceea au fost adaugate:
+- `catalog.html`
+- `configuratii.html`
+- `ghiduri.html`
+- `contact.html`
+
+## 76. Cum este organizat meniul?
+Meniul are:
+- optiuni principale
+- icon pentru fiecare optiune principala
+- submenu pentru pagini
+- submenu pentru sectiuni
+
+## 77. Ce se intampla pe ecran mare?
+Pe ecran mare:
+- textul din meniu este vizibil
+- apare bara glisanta la hover
+- submenu-ul se deschide prin scalare
+- optiunile din submenu isi schimba fundalul la hover
+
+## 78. Ce se intampla pe ecran mediu?
+Pe ecran mediu:
+- textul principal din meniu se ascunde
+- raman doar iconurile
+
+Aceasta respecta exact cerinta individuala pentru varianta medie.
+
+## 79. Ce se intampla pe ecran mic?
+Pe ecran mic:
+- apare iconul de hamburger
+- meniul se deschide din colt cu efect de tip clip-path circular
+- submenu-urile raman vizibile in interiorul meniului deschis
+
+## 80. Cum este facut hamburgerul?
+Nu este imagine.
+
+Este facut din 3 bare:
+- 3 elemente `span`
+- cu `width`, `height`, `background`
+- pozitionate absolut in interiorul containerului
+
+## 81. Ce bonusuri sunt bifate la hamburger?
+Sunt bifate:
+- hamburger din 3 bare HTML/CSS
+- animatie la aparitia iconului
+- schimbare de culoare
+- transformare geometrica
+- opacitate
+- delay diferit pentru fiecare bara
+
+## 82. De ce exista si fisierul `stil.scss` daca pagina foloseste `stil.css`?
+Pentru ca enuntul cere explicit SASS/SCSS ca sursa pentru meniu.
+
+Practic:
+- `stil.scss` arata structura SCSS
+- `stil.css` este varianta folosita efectiv de browser
+
+## 83. Unde se vede nesting-ul din SCSS?
+Nesting-ul este atunci cand un selector este scris in interiorul altuia.
+
+Exemplu:
+- `.menu-root`
+- apoi `.menu-item`
+- apoi `> a`
+
+## 84. Ce face `@extend` in SCSS?
+`@extend` permite reutilizarea unui bloc de stiluri comune.
+
+In proiect este folosit pentru suprafata comuna a elementelor de meniu.
+
+## 85. Ce face `@for` in SCSS?
+`@for` genereaza cod repetitiv automat.
+
+Aici este folosit pentru:
+- `animation-delay` diferit pe fiecare bara din hamburger
+
+## 86. Ce inseamna stil de printare?
+Este un set de reguli CSS care se aplica doar cand pagina este tiparita sau deschisa in print preview.
+
+## 87. De ce avem fisier separat `print.css`?
+Pentru ca cerinta spune explicit ca stilul de print trebuie implementat separat.
+
+## 88. Ce se ascunde la print?
+La print sunt ascunse:
+- imagini
+- videoclipuri
+- iframe-uri
+- PDF embedded
+- butonul `link-top`
+- alte elemente vizuale dependente de media
+
+## 89. De ce se scoate gridul la print?
+Pentru ca cerinta spune ca pagina printata trebuie afisata ca bloc, nu in grid.
+
+## 90. Cum apare meniul la print?
+La print:
+- sub titlul site-ului
+- ca lista neordonata
+- pe verticala
+- fara suboptiuni
+
+## 91. Ce este bannerul de print?
+Este paragraful cu textul:
+- `Acesta este un proiect scolar.`
+
+La print apare separat, centrat, cu border inset, conform cerintei.
+
+## 92. Ce este watermark-ul?
+Este o eticheta semi-transparenta care apare pe fiecare pagina printata, in coltul din dreapta jos.
+
+In proiect, watermark-ul contine:
+- `Ristea`
+- `Alexandru`
+
+## 93. Ce fac regulile `@page :left` si `@page :right`?
+Controleaza marginile diferit pentru:
+- paginile din stanga
+- paginile din dreapta
+
+## 94. Ce inseamna page break?
+Inseamna fortarea trecerii la pagina urmatoare in modul de print.
+
+In proiect exista:
+- un break dupa prima pagina
+- un break inainte de footer
+
+## 95. Ce sa spun la prezentare despre etapa 3?
+Poti explica simplu asa:
+- am extins site-ul la mai multe pagini
+- am construit un meniu comun cu variante pentru desktop, tablet si mobil
+- am facut hamburgerul din elemente HTML, nu din imagine
+- am folosit si o sursa SCSS pentru bonusurile cerute
+- am separat stilul de print intr-un fisier dedicat

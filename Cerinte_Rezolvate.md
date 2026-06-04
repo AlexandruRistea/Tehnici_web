@@ -42,3 +42,28 @@
 - `link-top` individual cu forma rotunjita sus, tooltip, opacitate si efect la hover: HTML-ul este in `index.html` (line 373), iar CSS-ul in `resurse/css/stil.css` (line 522).
 - Bonus reset CSS separat: resetarea este in `resurse/css/reset.css` (line 1).
 - Bonus MathML stilizat: formula este in `index.html` (line 293), iar stilizarea in `resurse/css/stil.css` (line 469).
+
+## Etapa 3
+
+- Branch separat pentru etapa 3: lucrul curent este pe branch-ul `Etapa_3`.
+- Meniu comun pe toate paginile site-ului: structura HTML este prezenta in `index.html` (line 32), `catalog.html` (line 21), `configuratii.html` (line 20), `ghiduri.html` (line 20) si `contact.html` (line 20).
+- Optiuni principale cu iconuri Font Awesome: sunt in `index.html` (line 50).
+- Submeniu pentru celelalte pagini ale site-ului: gruparea `Pagini` este in `index.html` (line 56).
+- Submeniu pentru sectiuni din pagina curenta: gruparea `Sectiuni` este in `index.html` (line 68).
+- Tranzitia cu bara glisanta pe hover pentru ecran mare: este implementata in `resurse/css/stil.css` (line 233).
+- Deschiderea submenu-ului prin scalare: este implementata in `resurse/css/stil.css` (line 270) si `resurse/css/stil.css` (line 305).
+- Schimbarea culorii de fundal pe optiunile din submenu la hover: este in `resurse/css/stil.css` (line 289).
+- Varianta pe ecran mediu, cu text ascuns si doar iconuri pentru optiunile principale: este in `resurse/css/stil.css` (line 748).
+- Varianta pe ecran mic cu meniu hamburger si clip-path circular: este in `resurse/css/stil.css` (line 811).
+- Bonus hamburger realizat din 3 bare HTML/CSS: elementul HTML este in `index.html` (line 41), iar stilul in `resurse/css/stil.css` (line 177).
+- Bonus animatie pentru aparitia iconului hamburger cu culoare, transformare si opacitate: animatiile sunt in `resurse/css/stil.css` (line 793), iar aplicarea lor este in `resurse/css/stil.css` (line 834).
+- Bonus delay succesiv intre animatiile barelor, generat cu `@for` in SCSS: este in `resurse/scss/stil.scss` (line 33).
+- Folosirea SCSS cu nesting si `@extend` pentru meniu: este in `resurse/scss/stil.scss` (line 7) si `resurse/scss/stil.scss` (line 13).
+- Stil de printare in fisier separat: este in `resurse/css/print.css` (line 1).
+- Banner de print cu textul `Acesta este un proiect scolar.`: elementul este in `index.html` (line 89), iar stilul de print in `resurse/css/print.css` (line 126).
+- Ascunderea imaginilor, videoclipurilor, iframe-urilor si a `link-top` la print: este in `resurse/css/print.css` (line 66).
+- Afisarea paginii fara grid la print: este in `resurse/css/print.css` (line 133).
+- Afisarea meniului ca lista neordonata, fara suboptiuni, sub titlul site-ului: este in `resurse/css/print.css` (line 91) si `resurse/css/print.css` (line 122).
+- Page break dupa meniul primei pagini si inainte de footer: este in `resurse/css/print.css` (line 87) si `resurse/css/print.css` (line 152).
+- Watermark cu numele `Ristea Alexandru`: HTML-ul este in `index.html` (line 27), iar stilul in `resurse/css/print.css` (line 18).
+- Margini diferite pentru paginile din stanga si dreapta la print: sunt in `resurse/css/print.css` (line 1) si `resurse/css/print.css` (line 6).

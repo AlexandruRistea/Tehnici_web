@@ -341,6 +341,62 @@ A fost adaugat un buton fix de revenire sus, cu:
 - `Cerinte_Rezolvate.md`
 - `Intrebari.md`
 
+## Etapa 3
+
+### Cerinte principale implementate
+
+#### 1. Task meniu
+Am implementat un meniu comun pentru toate paginile site-ului:
+- `index.html`
+- `catalog.html`
+- `configuratii.html`
+- `ghiduri.html`
+- `contact.html`
+
+Meniul respecta cerinta individuala astfel:
+- fiecare optiune principala are icon Font Awesome
+- exista o optiune de tip `Pagini` care grupeaza celelalte pagini ale site-ului
+- exista o optiune de tip `Sectiuni` care grupeaza linkuri interne catre sectiuni din pagina
+- pe ecran mare exista bara glisanta pe hover si submenu care se deschide prin scalare
+- pe ecran mediu raman doar iconurile pentru optiunile principale
+- pe ecran mic apare un meniu de tip hamburger
+
+Pentru partea de stil:
+- am folosit variabile CSS
+- am pregatit si un fisier SCSS pentru a arata imbricare, `@extend` si `@for`
+- hamburgerul este construit din 3 `span`
+- fiecare bara are animatie proprie
+- animatiile pornesc succesiv cu delay diferit
+
+#### 2. Stil printare
+Am adaugat un fisier separat `print.css` pentru stilul de tiparire.
+
+Sunt implementate:
+- bannerul cu textul `Acesta este un proiect scolar.`
+- ascunderea elementelor media si a butonului `link-top`
+- afisarea paginii fara grid la print
+- afisarea linkurilor ca text normal
+- afisarea meniului sub forma de lista neordonata, fara suboptiuni
+- page break dupa prima pagina si inainte de footer
+- watermark cu numele `Ristea Alexandru`
+- margini diferite pentru paginile stanga/dreapta
+
+#### 3. Bonusuri etapa 3
+- icon hamburger realizat din 3 bare HTML/CSS
+- animatie pe aparitia iconului pe ecran mic cu schimbare de culoare, transformare si opacitate
+- delay progresiv intre animatiile barelor
+- fisier SCSS separat care foloseste `@extend`, nesting si `@for`
+
+### Fisiere relevante pentru etapa 3
+- `index.html`
+- `catalog.html`
+- `configuratii.html`
+- `ghiduri.html`
+- `contact.html`
+- `resurse/css/stil.css`
+- `resurse/css/print.css`
+- `resurse/scss/stil.scss`
+
 ## Bonusuri
 In varianta actuala sunt implementate toate bonusurile cerute:
 - formula MathML cu sens in contextul alegerii sursei pentru un PC
@@ -348,11 +404,3 @@ In varianta actuala sunt implementate toate bonusurile cerute:
 - harta de imagine cu `map` si `area` peste imaginea principala
 - iframe Google Maps pentru locatia Facultatii de Matematica si Informatica
 - iframe YouTube cu playlist, controale si reluare automata
-
-## Observatii despre imagini
-Imaginile curente din `resurse/img` au fost generate local pentru a avea proiectul complet si functional. Pentru varianta finala de predare este in continuare recomandat sa fie inlocuite cu imagini alese manual, relevante pentru tema magazinului de componente PC, apoi redimensionate in trei variante:
-- small
-- medium
-- large
-
-Structura HTML este deja pregatita pentru aceste variante, deci imaginile se pot inlocui fara schimbari mari in cod.

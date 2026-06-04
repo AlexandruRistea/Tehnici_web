@@ -1,0 +1,37 @@
+$clr-primary: #38378c;
+$clr-secondary: #498c37;
+$clr-accent: #8c5537;
+$clr-ink: #282837;
+$clr-soft: #e9ffe3;
+
+%menu-surface {
+  background: rgba(233, 255, 227, 0.08);
+  border: 0.08rem solid rgba(233, 255, 227, 0.2);
+  border-radius: 999px;
+}
+
+.menu-root {
+  .menu-item {
+    > a {
+      @extend %menu-surface;
+    }
+
+    &.has-submenu {
+      .submenu {
+        background: rgba(23, 23, 35, 0.96);
+      }
+    }
+  }
+}
+
+.menu-toggle {
+  span {
+    background: $clr-soft;
+  }
+}
+
+@for $i from 1 through 3 {
+  .menu-toggle span:nth-child(#{$i}) {
+    animation-delay: #{($i - 1) * 0.3}s;
+  }
+}

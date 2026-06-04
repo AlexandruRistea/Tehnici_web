@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="resurse/css/reset.css">
   <link rel="stylesheet" href="resurse/css/stil.css">
+  <link rel="stylesheet" href="resurse/css/print.css" media="print">
   <link rel="apple-touch-icon" sizes="180x180" href="resurse/ico/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="resurse/ico/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="resurse/ico/favicon-16x16.png">
@@ -22,35 +23,73 @@
   <link rel="manifest" href="resurse/ico/site.webmanifest">
   <meta name="msapplication-config" content="resurse/ico/browserconfig.xml">
 </head>
-<body id="sus">
-  <header>
-    <div class="brand-bar">
-      <p class="eyebrow">Componente alese pentru upgrade inteligent</p>
-      <h1>Nexus Components</h1>
-      <p class="brand-copy">Prima pagina pune in acelasi loc selectie clara, stoc, recomandari si resurse pentru configuratii PC echilibrate.</p>
+<body id="sus" class="home-page">
+  <div class="watermark-print" aria-hidden="true">
+    <span>Ristea</span>
+    <span>Alexandru</span>
+  </div>
+
+  <header class="site-header">
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Deschide meniul principal">
+    <div class="header-row">
+      <div class="brand-bar">
+        <p class="eyebrow">Componente alese pentru upgrade inteligent</p>
+        <h1>Nexus Components</h1>
+        <p class="brand-copy">Prima pagina pune in acelasi loc selectie clara, stoc, recomandari si resurse pentru configuratii PC echilibrate.</p>
+        <p class="print-title">Nexus Components | Magazin piese calculator si componente PC</p>
+      </div>
+      <label for="nav-toggle" class="menu-toggle" aria-label="Comuta meniul">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
     </div>
-    <nav aria-label="Meniu principal">
-      <ul>
-        <li>
-          <a href="index.html">Acasa</a>
-          <ul>
+
+    <nav class="site-nav" aria-label="Meniu principal">
+      <ul class="menu-root">
+        <li class="menu-item">
+          <a href="index.html">
+            <i class="fa-solid fa-house"></i>
+            <span>Acasa</span>
+          </a>
+        </li>
+        <li class="menu-item has-submenu">
+          <a href="#">
+            <i class="fa-solid fa-layer-group"></i>
+            <span>Pagini</span>
+          </a>
+          <ul class="submenu">
+            <li><a href="catalog.html">Catalog</a></li>
+            <li><a href="configuratii.html">Configuratii</a></li>
+            <li><a href="ghiduri.html">Ghiduri</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </li>
+        <li class="menu-item has-submenu">
+          <a href="#">
+            <i class="fa-solid fa-compass"></i>
+            <span>Sectiuni</span>
+          </a>
+          <ul class="submenu">
             <li><a href="#prezentare">Prezentare</a></li>
             <li><a href="#tabel">Tabel</a></li>
             <li><a href="#calendar">Calendar</a></li>
             <li><a href="#video">Video</a></li>
-            <li><a href="#intrebari">Intrebari frecvente</a></li>
             <li><a href="#bonusuri">Bonusuri</a></li>
           </ul>
         </li>
-        <li><a href="catalog.html">Catalog</a></li>
-        <li><a href="configuratii.html">Configuratii</a></li>
-        <li><a href="ghiduri.html">Ghiduri</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li class="menu-item">
+          <a href="contact.html">
+            <i class="fa-solid fa-headset"></i>
+            <span>Suport</span>
+          </a>
+        </li>
       </ul>
     </nav>
+    <p class="project-banner">Acesta este un proiect scolar.</p>
   </header>
 
-  <main>
+  <main id="continut">
     <section id="prezentare" class="zone zone1">
       <hgroup class="zone-heading">
         <p class="zone-kicker"><i class="fa-solid fa-microchip icon-static" aria-hidden="true"></i> selectie rapida</p>
@@ -175,7 +214,7 @@
 
     <section id="calendar" class="zone zone3">
       <h2>Calendar de evenimente</h2>
-      <p>Placeholder pentru calendarul vizual cerut in layout. Momentan afisam reperele urmatoarelor activitati din showroom.</p>
+      <p>Placeholder pentru calendarul vizual cerut in layout. Momentan afisam repere din showroom.</p>
       <ul class="event-list">
         <li><time datetime="2026-06-06T10:00">6 iunie, ora 10:00</time><b>Start campanie SSD NVMe</b></li>
         <li><time datetime="2026-06-08T18:30">8 iunie, ora 18:30</time><b>Seara placilor video</b></li>
@@ -185,7 +224,7 @@
 
     <section id="anunturi" class="zone zone4">
       <h2>Anunturi rapide</h2>
-      <p>Zona 4 este folosita ca placeholder pentru anunturi. Am pastrat informatia scurta, cu accent pe urgenta si pe stoc.</p>
+      <p>Zona 4 este folosita ca placeholder pentru anunturi. Am pastrat informatia scurta.</p>
       <div class="notice-stack">
         <p>Transport gratuit pentru comenzi peste 500 lei in weekendul lansarii.</p>
         <p>Actualizam stocul pentru placi video la fiecare 2 ore.</p>
@@ -196,9 +235,9 @@
       <h2>Utilizatori online</h2>
       <p>Placeholder pentru lista utilizatorilor online, conform cerintei individuale de layout.</p>
       <ul class="user-list">
-        <li>BuilderAlex cauta surse modulare</li>
-        <li>FrameRateIoana compara RTX si Radeon</li>
-        <li>SocketMihai filtreaza placi de baza B650</li>
+        <li>BuilderAlex</li>
+        <li>Frame_Ioana</li>
+        <li>Sefu-Mihai</li>
       </ul>
     </section>
 
@@ -206,11 +245,11 @@
       <h2>Indicatori rapizi si statistici <i class="fa-solid fa-fan icon-animated" aria-hidden="true"></i></h2>
       <p>
         Interesul pentru placi video in aceasta saptamana:
-        <meter value="24" min="0" max="100" low="30" high="75" optimum="60">24 din 100</meter>
+        <meter value="29" min="0" max="100" low="30" high="75" optimum="60">29 din 100</meter>
       </p>
       <p>
         Gradul de ocupare al stocului pentru SSD-uri populare:
-        <meter value="88" min="0" max="100" low="30" high="75" optimum="60">88 din 100</meter>
+        <meter value="73" min="0" max="100" low="30" high="75" optimum="60">73 din 100</meter>
       </p>
       <p>
         Timpul mediu de selectie pentru un kit de upgrade:
@@ -330,11 +369,7 @@
 
         <section id="playlist-bonus">
           <h4>Playlist video automat</h4>
-          <p>
-            <!--Acest iframe incarca un playlist YouTube cu minimum doua videoclipuri, cu controale active si reluare automata de la inceput dupa ultimul clip.
-            -->
-            Aici avem 2 videoclipuri utile pentru a intelege alegerea echilibrata a componentelor PC
-          </p>
+          <p>Aici avem 2 videoclipuri utile pentru a intelege alegerea echilibrata a componentelor PC.</p>
           <iframe
             width="560"
             height="315"
@@ -349,7 +384,7 @@
     </section>
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <address>
       Telefon: <a href="tel:+40111222333">+40 111 222 333</a><br>
       Adresa showroom:<br>
@@ -370,6 +405,7 @@
     <p><a href="#sus">Inapoi la inceputul paginii</a></p>
     <small>&copy; Nexus Components, creat la data de <time datetime="2026-05-20">20 mai 2026</time>.</small>
   </footer>
+
   <a id="link-top" href="#sus" aria-label="Mergi la inceputul paginii">
     <span class="tooltip">Sus la inceput</span>
     <span class="button-shell">
