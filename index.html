@@ -9,6 +9,12 @@
   <meta name="msapplication-TileColor" content="#0f172a">
   <meta name="theme-color" content="#0f172a">
   <title>Nexus Components | Magazin piese calculator si componente PC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="resurse/css/reset.css">
+  <link rel="stylesheet" href="resurse/css/stil.css">
   <link rel="apple-touch-icon" sizes="180x180" href="resurse/ico/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="resurse/ico/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="resurse/ico/favicon-16x16.png">
@@ -18,15 +24,19 @@
 </head>
 <body id="sus">
   <header>
-    <h1>Nexus Components</h1>
+    <div class="brand-bar">
+      <p class="eyebrow">Componente alese pentru upgrade inteligent</p>
+      <h1>Nexus Components</h1>
+      <p class="brand-copy">Prima pagina pune in acelasi loc selectie clara, stoc, recomandari si resurse pentru configuratii PC echilibrate.</p>
+    </div>
     <nav aria-label="Meniu principal">
       <ul>
         <li>
           <a href="index.html">Acasa</a>
           <ul>
             <li><a href="#prezentare">Prezentare</a></li>
-            <li><a href="#categorii">Categorii</a></li>
-            <li><a href="#evenimente">Evenimente</a></li>
+            <li><a href="#tabel">Tabel</a></li>
+            <li><a href="#calendar">Calendar</a></li>
             <li><a href="#video">Video</a></li>
             <li><a href="#intrebari">Intrebari frecvente</a></li>
             <li><a href="#bonusuri">Bonusuri</a></li>
@@ -41,127 +51,159 @@
   </header>
 
   <main>
-    <section id="prezentare">
-      <hgroup>
+    <section id="prezentare" class="zone zone1">
+      <hgroup class="zone-heading">
+        <p class="zone-kicker"><i class="fa-solid fa-microchip icon-static" aria-hidden="true"></i> selectie rapida</p>
         <h2>Magazin de piese de calculator pentru upgrade rapid</h2>
-        <p>Componente PC alese pentru gaming, lucru si sisteme echilibrate.</p>
+        <p class="lead">Componente PC alese pentru gaming, lucru si sisteme echilibrate, intr-o prima impresie de tip poster.</p>
       </hgroup>
-      <p>
-        Nexus Components este un <b>magazin piese calculator</b> dedicat clientilor care cauta
-        <b>componente PC</b> bine organizate: <b>placi video</b>, <b>procesoare</b>, <b>SSD</b> si solutii de
-        <b>upgrade PC</b>. Nu oferim reparatii, ci selectie clara pentru cine vrea sa cumpere piese compatibile,
-        cu stoc afisat si explicatii scurte.
-      </p>
-      <p>
-        In oferta noastra apar frecvent procesoare AMD si Intel, placi video pentru gaming 1080p sau 1440p,
-        SSD NVMe pentru incarcare rapida si kituri pentru upgrade PC. Pentru pasionati folosim termeni precum
-        <i>airflow</i> si <i>benchmark</i>, fiindca fiecare componenta conteaza cand urmaresti echilibru intre pret,
-        temperatura si performanta.
-      </p>
-      <p>
-        <strong>Important:</strong> in weekendul de lansare, comenzile pentru placi video si procesoare din stoc
-        limitat sunt confirmate in ordinea plasarii.
-      </p>
-      <p>
-        Un sistem bine ales nu inseamna doar un produs simplu, ci un ansamblu coerent; de aceea punem accent
-        pe <em>compatibilitate</em>, nu doar pe reduceri. In recomandarile noastre, sursa de 500W propusa initial
-        este <s>insuficienta</s> <ins>inlocuita cu o sursa de 750W 80+ Gold</ins> pentru o configuratie moderna.
-      </p>
-      <p>
-        Un <abbr title="Solid-State Drive">SSD</abbr> rapid reduce timpii de incarcare, iar termenul
-        <dfn>socket</dfn> desemneaza standardul fizic si electric prin care procesorul se monteaza pe placa de baza.
-        Multi clienti vin dupa ce au citit <cite>The PC Builder's Guide</cite> sau citesc sfaturi scurte precum
-        <q>alege intai platforma si abia apoi placa video</q>.
-      </p>
-    </section>
-
-    <section id="categorii">
-      <h2>Categorii de componente PC</h2>
-      <p>
-        Pagina principala grupeaza cele mai cautate componente PC astfel incat un client sa ajunga repede la
-        procesorul, placa video sau SSD-ul potrivit.
-      </p>
-      <section>
-        <h3>Categorii principale</h3>
-        <dl>
-          <dt>Procesoare</dt>
-          <dd>Modele AMD Ryzen si Intel Core pentru office, gaming si creator.</dd>
-          <dt>Placi video</dt>
-          <dd>Solutii entry-level, mid-range si high-end pentru jocuri si randare.</dd>
-          <dt>Stocare</dt>
-          <dd>SSD NVMe, SSD SATA si HDD pentru capacitate mare.</dd>
-        </dl>
-      </section>
-      <section>
-        <h3>Ce promitem in pagina de start</h3>
-        <blockquote>
-          Selectam produse usor de comparat, cu accent pe stoc real, compatibilitate si recomandari scurte pentru upgrade PC.
-        </blockquote>
-        <p>
-          Pentru inspiratie externa, poti consulta si
-          <a href="https://www.microcenter.com/site/content/custom-pc-builder.aspx" target="_blank" rel="noopener noreferrer">builderul Micro Center</a>,
-          care arata clar cum pot fi grupate piesele intr-o configuratie coerenta.
-        </p>
-      </section>
-    </section>
-
-    <section id="galerie">
-      <h2>Imagine reprezentativa</h2>
-      <figure>
-        <picture>
-          <source media="(max-width: 600px)" srcset="resurse/img/hero-small.png">
-          <source media="(max-width: 1024px)" srcset="resurse/img/hero-medium.png">
-          <img src="resurse/img/hero-large.png" alt="Raft cu componente PC si carcasa pentru un magazin de piese de calculator" title="Raft cu componente PC" width="720" height="450" usemap="#harta-componente">
-        </picture>
-        <figcaption>Imagine concept pentru un magazin de piese de calculator, cu accent pe stoc de componente PC si sisteme pentru upgrade.</figcaption>
-      </figure>
+      <div class="hero-layout">
+        <div class="hero-copy">
+          <p>
+            Nexus Components este un <b>magazin piese calculator</b> dedicat clientilor care cauta
+            <b>componente PC</b> bine organizate: <b>placi video</b>, <b>procesoare</b>, <b>SSD</b> si solutii de
+            <b>upgrade PC</b>. Nu oferim reparatii, ci selectie clara pentru cine vrea sa cumpere piese compatibile,
+            cu stoc afisat si explicatii scurte.
+          </p>
+          <p>
+            In oferta noastra apar frecvent procesoare AMD si Intel, placi video pentru gaming 1080p sau 1440p,
+            SSD NVMe pentru incarcare rapida si kituri pentru upgrade PC. Pentru pasionati folosim termeni precum
+            <i>airflow</i> si <i>benchmark</i>, fiindca fiecare componenta conteaza cand urmaresti echilibru intre pret,
+            temperatura si performanta.
+          </p>
+          <p>
+            Un sistem bine ales nu inseamna doar un produs simplu, ci un ansamblu coerent; de aceea punem accent
+            pe <em>compatibilitate</em>, nu doar pe reduceri. In recomandarile noastre, sursa de 500W propusa initial
+            este <s>insuficienta</s> <ins>inlocuita cu o sursa de 750W 80+ Gold</ins> pentru o configuratie moderna.
+          </p>
+        </div>
+        <figure class="hero-card" id="galerie">
+          <picture>
+            <source media="(max-width: 600px)" srcset="resurse/img/hero-small.png">
+            <source media="(max-width: 1024px)" srcset="resurse/img/hero-medium.png">
+            <img src="resurse/img/hero-large.png" alt="Raft cu componente PC si carcasa pentru un magazin de piese de calculator" title="Raft cu componente PC" width="720" height="450" usemap="#harta-componente">
+          </picture>
+          <figcaption>Imagine concept pentru un magazin de piese de calculator, cu accent pe stoc de componente PC si sisteme pentru upgrade.</figcaption>
+        </figure>
+      </div>
       <map name="harta-componente">
-        <area shape="rect" coords="58,82,283,322" href="#categorii" alt="Zona de categorii pentru raftul de componente" title="Mergi la categorii">
+        <area shape="rect" coords="58,82,283,322" href="#extra" alt="Zona de categorii pentru raftul de componente" title="Mergi la categorii">
         <area shape="rect" coords="346,72,522,350" href="#tabel" alt="Zona de produse reprezentata de carcasa sistemului" title="Mergi la tabelul cu produse">
-        <area shape="rect" coords="548,132,664,271" href="#evenimente" alt="Zona de promotii reprezentata de cutia produsului" title="Mergi la evenimente">
+        <area shape="rect" coords="548,132,664,271" href="#calendar" alt="Zona de promotii reprezentata de cutia produsului" title="Mergi la calendar">
       </map>
-      <p>
-        Link cu imagine catre varianta mare:
-        <a href="resurse/img/hero-large.png">
-          <img src="resurse/img/hero-small.png" alt="Miniatura pentru deschiderea imaginii mari a magazinului de componente" width="160" height="100">
-        </a>
-      </p>
-      <p>
-        Daca vrei sa descarci lista unei configuratii demonstrative, foloseste
-        <a href="resurse/docs/lista-componente.txt" download="configuratie-nexus-components.txt">acest link de download</a>.
-      </p>
+      <div class="hero-notes">
+        <p>
+          <strong>Important:</strong> in weekendul de lansare, comenzile pentru placi video si procesoare din stoc
+          limitat sunt confirmate in ordinea plasarii.
+        </p>
+        <p>
+          Un <abbr title="Solid-State Drive">SSD</abbr> rapid reduce timpii de incarcare, iar termenul
+          <dfn>socket</dfn> desemneaza standardul fizic si electric prin care procesorul se monteaza pe placa de baza.
+          Multi clienti vin dupa ce au citit <cite>The PC Builder's Guide</cite> sau citesc sfaturi scurte precum
+          <q>alege intai platforma si abia apoi placa video</q>.
+        </p>
+        <p class="mini-download">
+          <a href="resurse/img/hero-large.png">
+            <img src="resurse/img/hero-small.png" alt="Miniatura pentru deschiderea imaginii mari a magazinului de componente" width="160" height="100">
+          </a>
+          <span>Daca vrei sa descarci lista unei configuratii demonstrative, foloseste
+            <a href="resurse/docs/lista-componente.txt" download="configuratie-nexus-components.txt">acest link de download</a>.
+          </span>
+        </p>
+      </div>
     </section>
 
-    <section id="evenimente">
-      <h2>Evenimente si lansari</h2>
-      <ul>
-        <li><time datetime="2026-06-06T10:00">6 iunie, ora 10:00</time>, <b>Start campanie SSD NVMe</b> - oferim recomandari de stocare pentru upgrade PC in functie de buget.</li>
-        <li><time datetime="2026-06-08T18:30">8 iunie, ora 18:30</time>, <b>Seara placilor video</b> - comparam modele pentru gaming 1080p si 1440p.</li>
-        <li><time datetime="2026-06-12T12:00">12 iunie, ora 12:00</time>, <b>Bundle procesor + placa de baza</b> - prezentam configuratii cu compatibilitate verificata.</li>
+    <section id="tabel" class="zone zone2">
+      <h2>Top categorii urmarite saptamana aceasta</h2>
+      <p>Tabelul are minimum 4 randuri si 4 coloane, un <code>rowspan</code> diferit de 1 si stilizare cu alternanta pe coloane, hover pe rand si scroll orizontal controlat pe ecranele mai inguste.</p>
+      <div class="table-scroll">
+        <table>
+          <colgroup>
+            <col class="col-odd">
+            <col class="col-even">
+            <col class="col-odd">
+            <col class="col-even">
+          </colgroup>
+          <caption>Categorii de componente PC si nivelul de interes</caption>
+          <thead>
+            <tr>
+              <th scope="col">Categorie</th>
+              <th scope="col">Produs reprezentativ</th>
+              <th scope="col">Buget orientativ</th>
+              <th scope="col">Disponibilitate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Procesoare</th>
+              <td>AMD Ryzen 7 9700X</td>
+              <td>1.650 lei</td>
+              <td>In stoc</td>
+            </tr>
+            <tr>
+              <th scope="row">Placi video</th>
+              <td>NVIDIA GeForce RTX 5070</td>
+              <td>3.450 lei</td>
+              <td>Stoc limitat</td>
+            </tr>
+            <tr>
+              <th scope="row">SSD</th>
+              <td>NVMe 1TB PCIe 4.0</td>
+              <td>420 lei</td>
+              <td>In stoc</td>
+            </tr>
+            <tr>
+              <th scope="row" rowspan="2">Pachete upgrade</th>
+              <td>Kit DDR5 32GB + B650</td>
+              <td>1.150 lei</td>
+              <td>In stoc</td>
+            </tr>
+            <tr>
+              <td>Kit sursa 750W + carcasa airflow</td>
+              <td>780 lei</td>
+              <td>La comanda</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="4">Preturile sunt orientative pentru pagina demonstrativa si pot fi actualizate dupa lansarea catalogului complet.</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </section>
+
+    <section id="calendar" class="zone zone3">
+      <h2>Calendar de evenimente</h2>
+      <p>Placeholder pentru calendarul vizual cerut in layout. Momentan afisam reperele urmatoarelor activitati din showroom.</p>
+      <ul class="event-list">
+        <li><time datetime="2026-06-06T10:00">6 iunie, ora 10:00</time><b>Start campanie SSD NVMe</b></li>
+        <li><time datetime="2026-06-08T18:30">8 iunie, ora 18:30</time><b>Seara placilor video</b></li>
+        <li><time datetime="2026-06-12T12:00">12 iunie, ora 12:00</time><b>Bundle procesor + placa de baza</b></li>
       </ul>
     </section>
 
-    <section id="video">
-      <h2>Videoclipuri utile despre componente</h2>
-      <div>
-        <a href="https://www.youtube.com/embed/BL4DCEp7blY?start=0" target="video-produse">Ghid complet PC build</a>
-        <a href="https://www.youtube.com/embed/hK51upU5bkU?start=0" target="video-produse">Cum alegi componentele</a>
-        <a href="https://www.youtube.com/embed/BL4DCEp7blY?start=0" target="video-produse">Clipul incarcat acum</a>
+    <section id="anunturi" class="zone zone4">
+      <h2>Anunturi rapide</h2>
+      <p>Zona 4 este folosita ca placeholder pentru anunturi. Am pastrat informatia scurta, cu accent pe urgenta si pe stoc.</p>
+      <div class="notice-stack">
+        <p>Transport gratuit pentru comenzi peste 500 lei in weekendul lansarii.</p>
+        <p>Actualizam stocul pentru placi video la fiecare 2 ore.</p>
       </div>
-      <iframe
-        name="video-produse"
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/BL4DCEp7blY?autoplay=0&amp;rel=0"
-        title="Videoclip YouTube despre asamblarea unui PC"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen>
-      </iframe>
     </section>
 
-    <section id="stocuri">
-      <h2>Indicatori rapizi</h2>
+    <section id="utilizatori-online" class="zone zone5">
+      <h2>Utilizatori online</h2>
+      <p>Placeholder pentru lista utilizatorilor online, conform cerintei individuale de layout.</p>
+      <ul class="user-list">
+        <li>BuilderAlex cauta surse modulare</li>
+        <li>FrameRateIoana compara RTX si Radeon</li>
+        <li>SocketMihai filtreaza placi de baza B650</li>
+      </ul>
+    </section>
+
+    <section id="stocuri" class="zone zone6">
+      <h2>Indicatori rapizi si statistici <i class="fa-solid fa-fan icon-animated" aria-hidden="true"></i></h2>
       <p>
         Interesul pentru placi video in aceasta saptamana:
         <meter value="24" min="0" max="100" low="30" high="75" optimum="60">24 din 100</meter>
@@ -170,139 +212,139 @@
         Gradul de ocupare al stocului pentru SSD-uri populare:
         <meter value="88" min="0" max="100" low="30" high="75" optimum="60">88 din 100</meter>
       </p>
+      <p>
+        Timpul mediu de selectie pentru un kit de upgrade:
+        <progress value="68" max="100">68%</progress>
+      </p>
     </section>
 
-    <section id="tabel">
-      <h2>Top categorii urmarite saptamana aceasta</h2>
-      <table>
-        <caption>Categorii de componente PC si nivelul de interes</caption>
-        <thead>
-          <tr>
-            <th scope="col">Categorie</th>
-            <th scope="col">Produs reprezentativ</th>
-            <th scope="col">Buget orientativ</th>
-            <th scope="col">Disponibilitate</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">Procesoare</th>
-            <td>AMD Ryzen 7 9700X</td>
-            <td>1.650 lei</td>
-            <td>In stoc</td>
-          </tr>
-          <tr>
-            <th scope="row">Placi video</th>
-            <td>NVIDIA GeForce RTX 5070</td>
-            <td>3.450 lei</td>
-            <td>Stoc limitat</td>
-          </tr>
-          <tr>
-            <th scope="row">SSD</th>
-            <td>NVMe 1TB PCIe 4.0</td>
-            <td>420 lei</td>
-            <td>In stoc</td>
-          </tr>
-          <tr>
-            <th scope="row" rowspan="2">Pachete upgrade</th>
-            <td>Kit DDR5 32GB + B650</td>
-            <td>1.150 lei</td>
-            <td>In stoc</td>
-          </tr>
-          <tr>
-            <td>Kit sursa 750W + carcasa airflow</td>
-            <td>780 lei</td>
-            <td>La comanda</td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <tr>
-            <td colspan="4">Preturile sunt orientative pentru pagina demonstrativa si pot fi actualizate dupa lansarea catalogului complet.</td>
-          </tr>
-        </tfoot>
-      </table>
-    </section>
-
-    <aside id="resurse">
-      <h2>Resurse si informatii externe</h2>
+    <aside id="resurse" class="zone zone7">
+      <h2>Date despre site si server</h2>
+      <p>Zona 7 concentreaza informatii externe si tehnice, pastrand cerinta de placeholder pentru date de site/server.</p>
       <p>
         Link catre un element dintr-o resursa externa:
         <a href="https://en.wikipedia.org/wiki/Solid-state_drive#Advantages_over_hard_disk_drives" target="_blank" rel="noopener noreferrer">
           https://en.wikipedia.<wbr>org/wiki/<wbr>Solid-state_drive#<wbr>Advantages_over_<wbr>hard_disk_drives
         </a>
       </p>
+      <p>Ultima actualizare de continut: <time datetime="2026-06-01">1 iunie 2026</time>.</p>
     </aside>
 
-    <section id="intrebari">
-      <h2>Intrebari frecvente</h2>
-      <details>
-        <summary>Cum aleg intre mai multe placi video?</summary>
-        <p>Alege rezolutia la care joci, bugetul si sursa disponibila; apoi compara memoria video si consumul.</p>
-      </details>
-      <details>
-        <summary>De ce conteaza compatibilitatea dintre procesor si placa de baza?</summary>
-        <p>Socket-ul si chipset-ul stabilesc daca procesorul poate functiona corect pe placa de baza aleasa.</p>
-      </details>
-      <details>
-        <summary>Ce upgrade PC se simte primul intr-un sistem vechi?</summary>
-        <p>De cele mai multe ori, un SSD si mai multa memorie RAM aduc primul salt vizibil in utilizarea zilnica.</p>
-      </details>
-    </section>
-
-    <section id="bonusuri">
-      <h2>Bonusuri implementate</h2>
-      <section id="formula">
-        <h3>Formula pentru alegerea sursei</h3>
+    <section id="extra" class="zone zone8">
+      <h2>Continut suplimentar pentru pagina principala</h2>
+      <section id="categorii">
+        <h3>Categorii de componente PC</h3>
         <p>
-          Pentru un <b>upgrade PC</b> echilibrat, estimam puterea recomandata a sursei ca suma dintre consumul total al componentelor si o rezerva de siguranta de 25%.
+          Pagina principala grupeaza cele mai cautate componente PC astfel incat un client sa ajunga repede la
+          procesorul, placa video sau SSD-ul potrivit.
         </p>
-        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-          <mrow>
-            <msub>
-              <mi>P</mi>
-              <mi>sursa</mi>
-            </msub>
-            <mo>=</mo>
-            <mo>(</mo>
-            <msub><mi>P</mi><mi>CPU</mi></msub>
-            <mo>+</mo>
-            <msub><mi>P</mi><mi>GPU</mi></msub>
-            <mo>+</mo>
-            <msub><mi>P</mi><mi>rest</mi></msub>
-            <mo>)</mo>
-            <mo>&#x00D7;</mo>
-            <mn>1.25</mn>
-          </mrow>
-        </math>
-        <p>
-          Exemplu simplu: daca procesorul, placa video si restul componentelor consuma impreuna 520W, recomandarea ajunge la aproximativ 650W, deci o sursa de 750W ramane o alegere sigura.
-        </p>
+        <dl>
+          <dt>Procesoare</dt>
+          <dd>Modele AMD Ryzen si Intel Core pentru office, gaming si creator.</dd>
+          <dt>Placi video</dt>
+          <dd>Solutii entry-level, mid-range si high-end pentru jocuri si randare.</dd>
+          <dt>Stocare</dt>
+          <dd>SSD NVMe, SSD SATA si HDD pentru capacitate mare.</dd>
+        </dl>
+        <blockquote>
+          Selectam produse usor de comparat, cu accent pe stoc real, compatibilitate si recomandari scurte pentru upgrade PC.
+        </blockquote>
       </section>
 
-      <section id="pdf-bonus">
-        <h3>Ghid PDF integrat</h3>
-        <p>
-          Mai jos este afisat un PDF demonstrativ cu recomandari pentru upgrade PC, folosind tagul <code>object</code>.
-        </p>
-        <object data="resurse/docs/ghid-upgrade.pdf" type="application/pdf" width="700" height="420">
-          <p>Browserul nu poate afisa PDF-ul direct. Poti descarca fisierul din <a href="resurse/docs/ghid-upgrade.pdf">acest link</a>.</p>
-        </object>
+      <section id="video">
+        <h3>Videoclipuri utile despre componente</h3>
+        <div class="container-iframe">
+          <div class="taburi-iframe">
+            <a href="https://www.youtube.com/embed/BL4DCEp7blY?start=0" target="video-produse">Ghid complet PC build</a>
+            <a href="https://www.youtube.com/embed/hK51upU5bkU?start=0" target="video-produse">Cum alegi componentele</a>
+            <a href="https://www.youtube.com/embed/n2dJvqU2_x4?start=0" target="video-produse">Upgrade echilibrat</a>
+          </div>
+          <iframe
+            name="video-produse"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/BL4DCEp7blY?autoplay=0&amp;rel=0"
+            title="Videoclip YouTube despre asamblarea unui PC"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+        </div>
       </section>
 
-      <section id="playlist-bonus">
-        <h3>Playlist video automat</h3>
-        <p>
-          Acest iframe incarca un playlist YouTube cu minimum doua videoclipuri, cu controale active si reluare automata de la inceput dupa ultimul clip.
-        </p>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/BL4DCEp7blY?autoplay=1&amp;controls=1&amp;loop=1&amp;playlist=hK51upU5bkU,BL4DCEp7blY&amp;rel=0"
-          title="Playlist YouTube despre alegerea componentelor PC"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen>
-        </iframe>
+      <section id="intrebari">
+        <h3>Intrebari frecvente</h3>
+        <details>
+          <summary>Cum aleg intre mai multe placi video?</summary>
+          <p>Alege rezolutia la care joci, bugetul si sursa disponibila; apoi compara memoria video si consumul.</p>
+        </details>
+        <details>
+          <summary>De ce conteaza compatibilitatea dintre procesor si placa de baza?</summary>
+          <p>Socket-ul si chipset-ul stabilesc daca procesorul poate functiona corect pe placa de baza aleasa.</p>
+        </details>
+        <details>
+          <summary>Ce upgrade PC se simte primul intr-un sistem vechi?</summary>
+          <p>De cele mai multe ori, un SSD si mai multa memorie RAM aduc primul salt vizibil in utilizarea zilnica.</p>
+        </details>
+      </section>
+
+      <section id="bonusuri">
+        <h3>Bonusuri implementate</h3>
+        <section id="formula">
+          <h4>Formula pentru alegerea sursei</h4>
+          <p>
+            Pentru un <b>upgrade PC</b> echilibrat, estimam puterea recomandata a sursei ca suma dintre consumul total al componentelor si o rezerva de siguranta de 25%.
+          </p>
+          <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+            <mrow>
+              <msub>
+                <mi>P</mi>
+                <mi>sursa</mi>
+              </msub>
+              <mo>=</mo>
+              <mo>(</mo>
+              <msub><mi>P</mi><mi>CPU</mi></msub>
+              <mo>+</mo>
+              <msub><mi>P</mi><mi>GPU</mi></msub>
+              <mo>+</mo>
+              <msub><mi>P</mi><mi>rest</mi></msub>
+              <mo>)</mo>
+              <mo>&#x00D7;</mo>
+              <mn>1.25</mn>
+            </mrow>
+          </math>
+          <p>
+            Exemplu simplu: daca procesorul, placa video si restul componentelor consuma impreuna 520W, recomandarea ajunge la aproximativ 650W, deci o sursa de 750W ramane o alegere sigura.
+          </p>
+        </section>
+
+        <section id="pdf-bonus">
+          <h4>Ghid PDF integrat</h4>
+          <p>
+            Mai jos este afisat un PDF demonstrativ cu recomandari pentru upgrade PC, folosind tagul <code>object</code>.
+          </p>
+          <object data="resurse/docs/ghid-upgrade.pdf" type="application/pdf" width="700" height="420">
+            <p>Browserul nu poate afisa PDF-ul direct. Poti descarca fisierul din <a href="resurse/docs/ghid-upgrade.pdf">acest link</a>.</p>
+          </object>
+        </section>
+
+        <section id="playlist-bonus">
+          <h4>Playlist video automat</h4>
+          <p>
+            <!--Acest iframe incarca un playlist YouTube cu minimum doua videoclipuri, cu controale active si reluare automata de la inceput dupa ultimul clip.
+            -->
+            Aici avem 2 videoclipuri utile pentru a intelege alegerea echilibrata a componentelor PC
+          </p>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/BL4DCEp7blY?autoplay=1&amp;controls=1&amp;loop=1&amp;playlist=hK51upU5bkU,BL4DCEp7blY&amp;rel=0"
+            title="Playlist YouTube despre alegerea componentelor PC"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+        </section>
       </section>
     </section>
   </main>
@@ -326,7 +368,13 @@
       referrerpolicy="no-referrer-when-downgrade">
     </iframe>
     <p><a href="#sus">Inapoi la inceputul paginii</a></p>
-    <small>&copy; Nexus Components, creat la data de <time datetime="2026-06-03">3 iunie 2026</time>.</small>
+    <small>&copy; Nexus Components, creat la data de <time datetime="2026-05-20">20 mai 2026</time>.</small>
   </footer>
+  <a id="link-top" href="#sus" aria-label="Mergi la inceputul paginii">
+    <span class="tooltip">Sus la inceput</span>
+    <span class="button-shell">
+      <span id="triunghi">&#8593;</span>
+    </span>
+  </a>
 </body>
 </html>
